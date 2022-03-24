@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    android:padding="24dp"
+    tools:context=".TeamActivity">
+
+    <!--  Tampilkan foto yang ada di team mu atau foto mu disini menggunakan ImageView  -->
+    <!--  Tampilkan nama yang ada di team mu atau nama mu disini menggunakan TextView  -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
