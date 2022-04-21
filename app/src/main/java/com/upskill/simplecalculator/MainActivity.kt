@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.core.view.isVisible
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,14 +39,14 @@ class MainActivity : AppCompatActivity() {
 
 
         buttonHasil.setOnClickListener {
-            if (editTextAngka1.text.toString().isBlank() || editTextAngka2.text.toString().isBlank()) {
+            if (editTextAngka1.text.isBlank() || editTextAngka2.text.isBlank()) {
                 //TODO 5 : Membuat Toast pada saat editTextAngka1 atau editTextAngka2 kosong dengan text message "Masukkan Angka terlebih dahulu!!" atau sesuai kemauanmu
             } else {
                 var hasil = 0F
-                // make if else untuk operasi
-                if (textViewOperasi.text.toString() == "+") {
+
+                if (textViewOperasi.text == "+") {
                     hasil = editTextAngka1.text.toString().toFloat() + editTextAngka2.text.toString().toFloat()
-                } else if (textViewOperasi.text.toString() == "-") {
+                } else if (textViewOperasi.text == "-") {
                     hasil = editTextAngka1.text.toString().toFloat() - editTextAngka2.text.toString().toFloat()
                 }
                 //TODO 6 : Membuat else if untuk operasi kali
@@ -56,7 +55,6 @@ class MainActivity : AppCompatActivity() {
 
                 textViewHasil.text = hasil.toString()
                 //TODO 8 : Membuat Toast untuk hasil
-                textViewHasil.isVisible = true
             }
         }
 
@@ -65,9 +63,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         buttonReset.setOnClickListener {
-            editTextAngka1.text.clear()
-            editTextAngka2.text.clear()
-            textViewHasil.text = ""
+            //TODO 10: Clear pada editTextAngka1
+            //TODO 11: Clear pada editTextAngka2
+            //TODO 12: Set text pada textViewHasil menjadi "0"
         }
     }
 }
