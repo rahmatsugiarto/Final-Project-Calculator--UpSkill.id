@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3F51B5"
+    android:background="@color/blue"
     android:padding="24dp"
     tools:context=".MainActivity">
 
@@ -53,8 +53,8 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="361dp"
+            android:layout_height="match_parent"
             android:padding="16dp">
 
             <EditText
@@ -74,8 +74,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="+"
-                android:textSize="20sp"
                 android:textColor="@color/black"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -97,9 +97,9 @@
             <LinearLayout
                 android:id="@+id/linearLayoutCompat"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:orientation="horizontal"
-                android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@+id/editTextAngka2">
 
                 <Button
